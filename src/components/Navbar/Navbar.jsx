@@ -71,7 +71,7 @@ const Navbar = () => {
                 Evento
               </a>
               <a
-                className={`nav-item nav-link disabled ${
+                className={`nav-item nav-link ${
                   activeLink === "regalo" ? "active" : ""
                 }`}
                 href="#regalo"

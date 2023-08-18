@@ -22,6 +22,14 @@ const Home = () => {
         <img src={img2} alt="hola" className={style.img}/>
         <p className={style.parrafo}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi magni autem, omnis saepe, sed alias aperiam quis neque explicabo, incidunt adipisci laboriosam vero quam modi eos? Neque vero facere eos.</p>
       </div>
+
+      <div>
+        <h1 className={style.titulo} id="evento">Evento</h1>
+      </div>
+
+      <div>
+        <h1 className={style.titulo} id="regalo">Regalo</h1>
+      </div>
       <Footer/>
     </div>
   )
