@@ -1,0 +1,15 @@
+.fondo{
+    background-color: rgba(0, 0, 0, 0.432);
+    position: absolute;
+    object-fit: cover;
+}
+
+.contenedor {
+    width: 100px;
+    height: 40px;
+    background-color: #ffe3b3;
+    position: absolute;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;    
+}

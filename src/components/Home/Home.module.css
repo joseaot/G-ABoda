@@ -1,0 +1,60 @@
+/* Home.module.css */
+
+/* Estilos generales para andres y gaby */
+.andres,
+.gaby {
+  display: flex;
+  align-items: center;
+  margin-inline: 30%;
+  background-color: #798a40c2;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+  margin-bottom: 20px;
+}
+
+/* Estilos para imágenes dentro de andres y gaby */
+.img {
+  width: 270px;
+  height: 250px;
+}
+
+.parrafo{
+    margin-inline: 20px;
+    display: flex;
+    color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+
+.titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    padding-top: 5%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+
+}
+
+/* Media query para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+  .andres,
+  .gaby {
+    flex-direction: row; /* Cambia la dirección de los elementos a vertical */
+    text-align: end; /* Centra el texto en dispositivos móviles */
+    margin-inline: 20px; /* Elimina el margen lateral */
+    margin-bottom: 10px;
+  }
+  
+  .img {
+    width: 150px; /* Ocupa todo el ancho disponible */
+    height: 280px; /* Mantén la proporción */
+  }
+  .titulo{
+    font-size: 40px;
+  }
+}
