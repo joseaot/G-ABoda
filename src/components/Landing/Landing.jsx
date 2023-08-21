@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import style from './Landing.module.css';
 import { useNavigate } from 'react-router-dom';
 import foto from '../../img/frente.jpg';

@@ -1,8 +1,8 @@
 import Carrousel from "../Carrousel/Carrousel"
 import Navbar from "../Navbar/Navbar"
 import style from './Home.module.css'
-import img1 from '../../img/Horizontal2.jpg'
-import img2 from '../../img/Horizontal3.jpg'
+import img2 from '../../img/andres.jpg'
+import img1 from '../../img/gaby.jpg'
 import Footer from "../Footer/Footer"
 
 
