@@ -1,7 +1,8 @@
 import style from './Landing.module.css';
 import { useNavigate } from 'react-router-dom';
 import foto from '../../img/frente.jpg';
-import sugar1 from '../../audio/sugar.mp3';
+// import sugar1 from '../../audio/sugar.mp3';
+import logo from '../../img/logo-blanco.png'
 
 const Landing = () => {
     const navigate = useNavigate();
@@ -31,7 +32,8 @@ const Landing = () => {
             </div>
             <div className={style.overlay}>
                 <div className={style.centeredContent}>
-                    <h1 className={style.title}>Gabriela & Andres</h1>
+                    <img src={logo} className={style.logo}/>
+                    {/* <h1 className={style.title}>Gabriela & Andres</h1> */}
                     <button onClick={handleGoHome} className={style.boton}>
                         Ingresar
                     </button>

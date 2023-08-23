@@ -3,10 +3,11 @@ import img2 from '../../img/Horizontal2.jpg'
 import img3 from '../../img/Horizontal3.jpg'
 import img4 from '../../img/Horizontal4.jpg'
 import img5 from '../../img/Horizontal5.jpg'
+import style from './Carrousel.module.css'
 
 const Carrousel = () => {
   return (
-    <div>
+    <div className={style.container}>
       <div
         id="carouselExampleControls"
         className="carousel slide"

@@ -1,0 +1,19 @@
+/* @media (min-width: 769px) {
+    .container {
+      margin-top: 100px; /* Puedes ajustar este valor según sea necesario */
+
+
+  
+  /* Estilos para pantallas medianas (de 481px a 768px) */
+  @media (max-width: 768px) {
+    .container {
+      margin-top: 50px; /* Ajusta este valor para pantallas medianas */
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas (hasta 480px) */
+  @media (max-width: 480px) {
+    .container {
+      margin-top: 30px; /* Ajusta este valor para pantallas pequeñas */
+    }
+  }

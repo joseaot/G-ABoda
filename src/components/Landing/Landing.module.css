@@ -9,13 +9,22 @@
 }
 
 
+.logo{
+    position: fixed;
+    top: 3%;
+    border-radius: 50%;
+    padding: -10%;
+    z-index: -1;
+}
+
+
 
 .centeredContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 15%;
+    margin-top: 5%;
 
 }
 
@@ -31,13 +40,14 @@
 }
 
 .boton {
-    background-color: #000000;
+    background-color: #e0b574;
     border: none;
     border-radius: 40px;
+    margin-top: 22%;
     width: 100px;
     height: 40px;
     cursor: pointer;
-    color: #fefae0;
+    color: #000000;
     text-shadow: black;
     transition: background-color 0.3s, transform 0.3s;
 
@@ -54,6 +64,11 @@
     .videoContainer {
         width: 100%;
         height: auto;
+    }
+
+    .logo{
+        position: fixed;
+        top: 18%;
     }
 
     .foto {
@@ -79,6 +94,8 @@
         width: 120px;
         height: 36px;
         font-size: 14px;
+        margin-top: 70%;
+        border-right: rgba(0, 0, 0, 0.363);
     }
 }
 
