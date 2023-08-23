@@ -1,7 +1,7 @@
 import style from './Landing.module.css';
 import { useNavigate } from 'react-router-dom';
 import foto from '../../img/frente.jpg';
-// import sugar1 from '../../audio/sugar.mp3';
+import sugar1 from '../../audio/sugar.mp3';
 import logo from '../../img/logo-blanco.png'
 
 const Landing = () => {
