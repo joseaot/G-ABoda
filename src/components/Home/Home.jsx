@@ -6,6 +6,7 @@ import img1 from "../../img/gaby.jpg";
 import Footer from "../Footer/Footer";
 import WeddingCountdown from "../WeddingCountdown/WeddingCountdown ";
 import { FaChurch } from "react-icons/fa";
+import flores from '../../img/flores3.webp'
 
 import {AiFillGift} from 'react-icons/ai'
 
@@ -16,7 +17,7 @@ const Home = () => {
       <Carrousel id="inicio" />
 
       <h1 className={style.titulo} id="nuestra-historia">
-        Nuestra Historia
+      <img src={flores} alt="flores" className={style.flores}/> Nuestra Historia
       </h1>
       <div className={style.andres}>
         <p className={style.parrafo}>
@@ -37,7 +38,7 @@ const Home = () => {
 
       <div>
         <h1 className={style.titulo} id="evento">
-          Evento
+        <img src={flores} alt="flores" className={style.flores}/> Evento
         </h1>
         <div className={style.evento}>
           <div className={style.gaby2}>
@@ -54,8 +55,6 @@ const Home = () => {
           </div>
           <FaChurch className={style.icono} />
           <p>Eventos Capri</p>
-          <WeddingCountdown />
-          <h3>Cuenta regresiva</h3>
           <a
             href="https://goo.gl/maps/kQGhi1YNfeZXCN2A6"
 
@@ -63,12 +62,14 @@ const Home = () => {
           >
             <button>Ver Direccion</button>
           </a>
+          <WeddingCountdown />
+          <h3>Cuenta regresiva</h3>
         </div>
       </div>
 
       <div>
         <h1 className={style.titulo} id="regalo">
-          Regalo
+        <img src={flores} alt="flores" className={style.flores}/> Regalo
         </h1>
         <AiFillGift className={style.icono} />
       </div>
