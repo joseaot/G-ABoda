@@ -5,7 +5,9 @@ import img2 from "../../img/andres.jpg";
 import img1 from "../../img/gaby.jpg";
 import Footer from "../Footer/Footer";
 import WeddingCountdown from "../WeddingCountdown/WeddingCountdown ";
-import {FaChurch} from 'react-icons/fa'
+import { FaChurch } from "react-icons/fa";
+
+import {AiFillGift} from 'react-icons/ai'
 
 const Home = () => {
   return (
@@ -14,7 +16,7 @@ const Home = () => {
       <Carrousel id="inicio" />
 
       <h1 className={style.titulo} id="nuestra-historia">
-        Nuestra Historia📖
+        Nuestra Historia
       </h1>
       <div className={style.andres}>
         <p className={style.parrafo}>
@@ -38,15 +40,28 @@ const Home = () => {
           Evento
         </h1>
         <div className={style.evento}>
-          <FaChurch className={style.icono}/>
+          <div className={style.gaby2}>
+
+          <p className={style.parrafo}>
+            Hay momentos en la vida que son muy especiales por si solos, pero al
+            compartirlo con personas tan importantes como tu, se convierten en
+            momentos inolvidables. Es por eso que queremos que hagas parte de
+            nuestro día soñado, donde Dios comienza a escribir nuestra historia
+            juntos ya que El es quien nos a unido en su propósito perfecto. Y
+            estamos solicitando invitados con o sin experiencia, su pago se
+            realizara con deliciosa comida y ¡mucho amor!
+          </p>
+          </div>
+          <FaChurch className={style.icono} />
           <p>Eventos Capri</p>
-          <WeddingCountdown/>
+          <WeddingCountdown />
           <h3>Cuenta regresiva</h3>
           <a
-            href="https://www.google.com/maps/place/Eventos+Capri+SRL/@-34.747358,-58.3937715,15z/data=!4m22!1m15!4m14!1m5!1m1!1s0x95bcd2a27b0e333d:0x8a2b73d8300013f5!2m2!1d-58.3937715!2d-34.747358!1m6!1m2!1s0x95bcd2a27b0e333d:0x8a2b73d8300013f5!2sEventos+Capri+SRL,+Av.+Adolfo+Alsina+934,+B1828ABF+Banfield,+Provincia+de+Buenos+Aires!2m2!1d-58.3937715!2d-34.747358!3e3!3m5!1s0x95bcd2a27b0e333d:0x8a2b73d8300013f5!8m2!3d-34.747358!4d-58.3937715!16s%2Fg%2F1hc88bdpt?entry=ttu"
+            href="https://goo.gl/maps/kQGhi1YNfeZXCN2A6"
+
             target="_blank"
           >
-            <p>Ver Direccion</p>
+            <button>Ver Direccion</button>
           </a>
         </div>
       </div>
@@ -55,6 +70,7 @@ const Home = () => {
         <h1 className={style.titulo} id="regalo">
           Regalo
         </h1>
+        <AiFillGift className={style.icono} />
       </div>
       <Footer />
     </div>
