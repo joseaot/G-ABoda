@@ -38,9 +38,10 @@ const Navbar = () => {
             fontSize: "25px",
             borderRight: "3px solid rgba(0, 0, 0, 0.363)",
             color: "#2b3026",
+            fontWeight: 900,
           }}
         >
-          Gabriela & Andres
+          Andres & Gaby
         </a>
         <button
           className={`navbar-toggler ${style.boton}`}

@@ -1,11 +1,12 @@
 import { BsFacebook } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
+import style from './Footer.module.css'
 
 const Footer = () => {
   return (
     <div className="container">
-      <footer className="d-flex flex-wrap justify-content-between align-items-center py-2 border-top text-center text-md-left">
+      <footer className="d-flex flex-wrap justify-content-between align-items-center py-2 border-top text-center text-md-left custom-footer">
         <div className="col-md-4 d-flex align-items-center">
           <a
             href="/"
@@ -14,8 +15,8 @@ const Footer = () => {
             <svg className="bi" width="30" height="24"></svg>
           </a>
           <span
-            className="mb-3 mb-md-0 text-muted text-sm"
-            style={{ fontSize: "20px" }}
+            className="mb-3 mb-md-0 text-sm"
+            style={{ fontSize: "20px", color: "rgb(52 51 51)" }} // Cambia el color de la letra a rojo
           >
             &copy; 2023 Con Cariño Jose O.
           </span>
@@ -29,7 +30,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <BsFacebook />
+              <BsFacebook className={style.emoji}/>
             </a>
           </li>
           <li className="mx-2">
@@ -39,7 +40,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <IoLogoWhatsapp />
+              <IoLogoWhatsapp className={style.emoji}/>
             </a>
           </li>
           <li className="mx-2">
@@ -49,7 +50,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AiFillInstagram />
+              <AiFillInstagram className={style.emoji}/>
             </a>
           </li>
         </ul>

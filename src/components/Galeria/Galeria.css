@@ -1,0 +1,17 @@
+/* Estilos para el carrusel */
+.carousel-inner {
+    max-height: 500px; /* Altura máxima del carrusel */
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media query para pantallas más grandes (a partir de 768px) */
+  @media (min-width: 768px) {
+    .carousel-item img {
+      max-width: 80%; /* Ajusta el ancho de las imágenes en pantallas grandes */
+      margin: 0 auto;
+    }
+  }

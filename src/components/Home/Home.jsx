@@ -1,15 +1,19 @@
 import Carrousel from "../Carrousel/Carrousel";
 import Navbar from "../Navbar/Navbar";
 import style from "./Home.module.css";
-import pareja from "../../img/pareja.png";
-import bebe from "../../img/bebe.png";
-import lista from "../../img/lista.png";
+import pareja from "../../img/trajes.svg";
+import bebe from "../../img/bebe2.svg";
+import tranferencia from "../../img/transferencia.svg";
+import lista from "../../img/lista2.svg";
 import Footer from "../Footer/Footer";
 import WeddingCountdown from "../WeddingCountdown/WeddingCountdown ";
 import { FaChurch } from "react-icons/fa";
+import { BsEnvelopeHeart } from "react-icons/bs";
 import flores from "../../img/flores3.webp";
 
+
 import { AiFillGift } from "react-icons/ai";
+import Galeria from "../Galeria/Galeria.jsx";
 
 const Home = () => {
   return (
@@ -52,9 +56,10 @@ const Home = () => {
             <div className={style.vestimenta}>
               <span className={style.span}> Vestimenta</span>
               <img className={style.icono} src={pareja} alt="pareja" />
-              <p className={style.parrafo}>
-                Etiqueta - Formal: Queremos verte con la pinta mas elegante!
+              <p lassName={style.span}>
+                Etiqueta Formal.
               </p>
+              <p className={style.parrafo}>Queremos verte con la pinta mas elegante!</p>
             </div>
             <div className={style.vestimenta}>
               <span className={style.span}>¿Niños?</span>
@@ -96,7 +101,12 @@ const Home = () => {
           Regalo
         </h1>
         <AiFillGift className={style.icono} />
-        <p className={style.parrafo}>lluvia de sobres y aias andres.sierra1</p>
+        <p className={style.parrafo}>Si quieres darnos un obsequio, aqui tienes algunas opciones:</p>
+        <BsEnvelopeHeart className={style.icono2}/>
+        <span>Lluvia de sobres</span>
+        <img src={tranferencia} alt="trans" className={style.icono} />
+        <span>Tranferencia</span>
+        <p className={style.parrafo}>Alias: andres.sierra1</p>
         <div className={style.horizontal}>
           <h3 className={style.separador}></h3>
           <img src={flores} alt="flores" className={style.flores} />
@@ -108,6 +118,7 @@ const Home = () => {
       <h1 className={style.titulo} id="galeria">
           Galeria
         </h1>
+      <Galeria/>
         <div className={style.horizontal}>
           <h3 className={style.separador}></h3>
           <img src={flores} alt="flores" className={style.flores} />
