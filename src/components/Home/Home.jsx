@@ -69,7 +69,7 @@ const Home = () => {
             </div>
             <div className={style.vestimenta}>
               <span className={style.span}>Confirmacion</span>
-              <p>Nos gustaria saber si nos acompañaras, y seria de gran ayuda que nos confirmes!</p>
+              <p className={style.parrafo}>Nos gustaria saber si nos acompañaras, y seria de gran ayuda que nos confirmes!</p>
               <img className={style.icono} src={lista} alt="" />
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd_KlJrqXRGRaGsQyTtNCPfzzbpYDuMrmtd7-Q_iodhbF8YxA/viewform"
@@ -78,7 +78,7 @@ const Home = () => {
                 <button className={style.boton}>Confirmar</button>
               </a>
               <p className={style.parrafo}>Tiempo de confirmación, hasta el 15 de septiembre</p>
-                <p>¡Listo! Nos vemos el 13 de Octubre</p>
+              <p className={style.parrafo}>¡Listo! Nos vemos el 13 de Octubre</p>
             </div>
           </div>
           <WeddingCountdown />
