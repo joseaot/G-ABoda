@@ -1,13 +1,21 @@
+@font-face {
+  font-family: 'cursi';
+  src: url('../../font/cursi.ttf') format('ttf')
+  /* Puedes agregar otros atributos aquí, como font-weight y font-style si es necesario */
+}
+
+
 body {
     padding-top: 50px; /* Ajusta según la altura de tu navbar */
-    font-family: 'Great Vibes', cursive;
+    font-family: 'cursi';
     font-size: 25px;
-    font-weight: 900;
+    font-weight: 800;
 }
 
 .navbar{
+  background-color: #f7f9f0;
   box-shadow: -1px 4px 5px -1px rgba(0,0,0,0.75);
-
+  font-family: 'cursi';
 }
 
 

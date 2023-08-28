@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'cursi';
+    src: url('../../font/cursi.ttf') format('ttf')
+    /* Puedes agregar otros atributos aquí, como font-weight y font-style si es necesario */
+  }
+  
+
 .foto {
     position: absolute;
     top: 0;
@@ -34,13 +41,13 @@
     border-radius: 10px;
     padding-inline: 20px;
     text-shadow: 3px 3px 0px rgba(0,0,0,0.65);
-    font-family: 'Great Vibes', cursive;
+    font-family: 'cursi';
     font-size:  60px;
     margin-bottom: 50px;
 }
 
 .boton {
-    background-color: #e0b574;
+    background-color: #fefae0;
     border: none;
     border-radius: 40px;
     margin-top: 22%;
@@ -55,7 +62,7 @@
 }
 
 .boton:hover {
-    background-color: #dd954e;
+    background-color: #fefae0ea;
     transform: scale(1.05); /* Efecto de escala suave al hacer hover */
 }
 

@@ -1,77 +1,118 @@
 import Carrousel from "../Carrousel/Carrousel";
 import Navbar from "../Navbar/Navbar";
 import style from "./Home.module.css";
-import img2 from "../../img/andres.jpg";
-import img1 from "../../img/gaby.jpg";
+import pareja from "../../img/pareja.png";
+import bebe from "../../img/bebe.png";
+import lista from "../../img/lista.png";
 import Footer from "../Footer/Footer";
 import WeddingCountdown from "../WeddingCountdown/WeddingCountdown ";
 import { FaChurch } from "react-icons/fa";
-import flores from '../../img/flores3.webp'
+import flores from "../../img/flores3.webp";
 
-import {AiFillGift} from 'react-icons/ai'
+import { AiFillGift } from "react-icons/ai";
 
 const Home = () => {
   return (
     <div className={style.encabezado}>
       <Navbar />
       <Carrousel id="inicio" />
-
-      <h1 className={style.titulo} id="nuestra-historia">
-      <img src={flores} alt="flores" className={style.flores}/> Nuestra Historia
-      </h1>
-      <div className={style.andres}>
-        <p className={style.parrafo}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi magni
-          autem, omnis saepe, sed alias aperiam quis neque explicabo, incidunt
-          adipisci laboriosam vero quam modi eos? Neque vero facere eos.
-        </p>
-        <img src={img1} alt="hola" className={style.img} />
-      </div>
-      <div className={style.gaby}>
-        <img src={img2} alt="hola" className={style.img} />
-        <p className={style.parrafo}>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi magni
-          autem, omnis saepe, sed alias aperiam quis neque explicabo, incidunt
-          adipisci laboriosam vero quam modi eos? Neque vero facere eos.
-        </p>
-      </div>
-
-      <div>
-        <h1 className={style.titulo} id="evento">
-        <img src={flores} alt="flores" className={style.flores}/> Evento
+      <div className={style.ft}>
+        <h1 className={style.titulo} id="nuestra-historia">
+          Acompañanos
         </h1>
-        <div className={style.evento}>
-          <div className={style.gaby2}>
-
-          <p className={style.parrafo}>
-            Hay momentos en la vida que son muy especiales por si solos, pero al
-            compartirlo con personas tan importantes como tu, se convierten en
-            momentos inolvidables. Es por eso que queremos que hagas parte de
-            nuestro día soñado, donde Dios comienza a escribir nuestra historia
-            juntos ya que El es quien nos a unido en su propósito perfecto. Y
-            estamos solicitando invitados con o sin experiencia, su pago se
-            realizara con deliciosa comida y ¡mucho amor!
-          </p>
-          </div>
-          <FaChurch className={style.icono} />
-          <p>Eventos Capri</p>
-          <a
-            href="https://goo.gl/maps/kQGhi1YNfeZXCN2A6"
-
-            target="_blank"
-          >
-            <button>Ver Direccion</button>
-          </a>
-          <WeddingCountdown />
-          <h3>Cuenta regresiva</h3>
+        <p className={style.parrafo}>
+          Hay momentos en la vida que son muy especiales por si solos, pero al
+          compartirlo con personas tan importantes como tu, se convierten en
+          momentos inolvidables. Es por eso que queremos que hagas parte de
+          nuestro día soñado, donde Dios comienza a escribir nuestra historia
+          juntos ya que El es quien nos a unido en su propósito perfecto. Y
+          estamos solicitando invitados con o sin experiencia, su pago se
+          realizara con deliciosa comida y ¡mucho amor!
+        </p>
+        <div className={style.horizontal}>
+          <h3 className={style.separador}></h3>
+          <img src={flores} alt="flores" className={style.flores} />
+          <h3 className={style.separador}></h3>
         </div>
       </div>
 
-      <div>
+      <div className={style.ft}>
+        <h1 className={style.titulo} id="evento">
+          EVENTO
+        </h1>
+        <div className={style.evento}>
+          <FaChurch className={style.icono} />
+          <p className={style.parrafo}>
+            Anhelamos verte el 13 de Octubre en Villa capri Eventos
+          </p>
+          <a href="https://goo.gl/maps/kQGhi1YNfeZXCN2A6" target="_blank">
+            <button className={style.boton}>Ver Direccion</button>
+          </a>
+          <div className={style.evento}>
+            <div className={style.vestimenta}>
+              <span className={style.span}> Vestimenta</span>
+              <img className={style.icono} src={pareja} alt="pareja" />
+              <p className={style.parrafo}>
+                Etiqueta - Formal: Queremos verte con la pinta mas elegante!
+              </p>
+            </div>
+            <div className={style.vestimenta}>
+              <span className={style.span}>¿Niños?</span>
+              <img className={style.icono} src={bebe} alt="bebe" />
+              <p className={style.parrafo}>
+                Amamos mucho a tus hijos y por eso hemos decidido que no se
+                desvelen.
+              </p>
+              <p>
+                -Niños: Buenas Noches, <br />- Papás: Buena Noche!
+              </p>
+            </div>
+            <div className={style.vestimenta}>
+              <span className={style.span}>Confirmacion</span>
+              <p>Nos gustaria saber si nos acompañaras, y seria de gran ayuda que nos confirmes!</p>
+              <img className={style.icono} src={lista} alt="" />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd_KlJrqXRGRaGsQyTtNCPfzzbpYDuMrmtd7-Q_iodhbF8YxA/viewform"
+                target="_blank"
+                >
+                <button className={style.boton}>Confirmar</button>
+              </a>
+              <p className={style.parrafo}>Tiempo de confirmación, hasta el 15 de septiembre</p>
+                <p>¡Listo! Nos vemos el 13 de Octubre</p>
+            </div>
+          </div>
+          <WeddingCountdown />
+          <h3>Cuenta regresiva</h3>
+        </div>
+        <div className={style.horizontal}>
+          <h3 className={style.separador}></h3>
+          <img src={flores} alt="flores" className={style.flores} />
+          <h3 className={style.separador}></h3>
+        </div>
+      </div>
+
+      <div className={style.evento}>
         <h1 className={style.titulo} id="regalo">
-        <img src={flores} alt="flores" className={style.flores}/> Regalo
+          Regalo
         </h1>
         <AiFillGift className={style.icono} />
+        <p className={style.parrafo}>lluvia de sobres y aias andres.sierra1</p>
+        <div className={style.horizontal}>
+          <h3 className={style.separador}></h3>
+          <img src={flores} alt="flores" className={style.flores} />
+          <h3 className={style.separador}></h3>
+        </div>
+      </div>
+
+      <div className={style.evento}>
+      <h1 className={style.titulo} id="galeria">
+          Galeria
+        </h1>
+        <div className={style.horizontal}>
+          <h3 className={style.separador}></h3>
+          <img src={flores} alt="flores" className={style.flores} />
+          <h3 className={style.separador}></h3>
+        </div>
       </div>
       <Footer />
     </div>
