@@ -82,8 +82,9 @@ const Home = () => {
                 >
                 <button className={style.boton}>Confirmar</button>
               </a>
-              <p className={style.parrafo}>Tiempo de confirmación, hasta el 15 de septiembre</p>
+              <p className={style.parrafo}>Tiempo de confirmación, hasta el 10 de septiembre</p>
               <p className={style.parrafo}>¡Listo! Nos vemos el 13 de Octubre</p>
+              <p className={style.parrafo}>A las 19:00Hrs</p>
             </div>
           </div>
           <WeddingCountdown />
