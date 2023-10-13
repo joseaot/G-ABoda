@@ -11,7 +11,6 @@ import { FaChurch } from "react-icons/fa";
 import { BsEnvelopeHeart } from "react-icons/bs";
 import flores from "../../img/flores3.webp";
 
-
 import { AiFillGift } from "react-icons/ai";
 import Galeria from "../Galeria/Galeria.jsx";
 
@@ -56,10 +55,10 @@ const Home = () => {
             <div className={style.vestimenta}>
               <span className={style.span}> Vestimenta</span>
               <img className={style.icono} src={pareja} alt="pareja" />
-              <p lassName={style.span}>
-                Etiqueta Formal.
+              <p lassName={style.span}>Etiqueta Formal.</p>
+              <p className={style.parrafo}>
+                Queremos verte con la pinta mas elegante!
               </p>
-              <p className={style.parrafo}>Queremos verte con la pinta mas elegante!</p>
             </div>
             <div className={style.vestimenta}>
               <span className={style.span}>¿Niños?</span>
@@ -74,17 +73,24 @@ const Home = () => {
             </div>
             <div className={style.vestimenta}>
               <span className={style.span}>Confirmacion</span>
-              <p className={style.parrafo}>Nos gustaria saber si nos acompañaras, y seria de gran ayuda que nos confirmes!</p>
+              <p className={style.parrafo}>
+                Nos gustaria saber si nos acompañaras, y seria de gran ayuda que
+                nos confirmes!
+              </p>
               <img className={style.icono} src={lista} alt="" />
               <a
                 href="https://docs.google.com/forms/d/e/1FAIpQLSd_KlJrqXRGRaGsQyTtNCPfzzbpYDuMrmtd7-Q_iodhbF8YxA/viewform"
                 target="_blank"
-                >
+              >
                 <button className={style.boton}>Confirmar</button>
               </a>
-              <p className={style.parrafo}>Tiempo de confirmación, hasta el 10 de septiembre</p>
-              <p className={style.parrafo}>¡Listo! Nos vemos el 13 de Octubre</p>
-              <p className={style.parrafo}>A las 19:00Hrs</p>
+              <p className={style.parrafo}>
+                Tiempo de confirmación, hasta el 10 de septiembre
+              </p>
+              <p className={style.parrafo}>
+                ¡Listo! Nos vemos el 13 de Octubre
+              </p>
+              <p className={style.parrafo}>A las 20:00Hrs</p>
             </div>
           </div>
           <WeddingCountdown />
@@ -102,8 +108,10 @@ const Home = () => {
           Regalo
         </h1>
         <AiFillGift className={style.icono} />
-        <p className={style.parrafo}>Si quieres darnos un obsequio, aqui tienes algunas opciones:</p>
-        <BsEnvelopeHeart className={style.icono2}/>
+        <p className={style.parrafo}>
+          Si quieres darnos un obsequio, aqui tienes algunas opciones:
+        </p>
+        <BsEnvelopeHeart className={style.icono2} />
         <span>Lluvia de sobres</span>
         <img src={tranferencia} alt="trans" className={style.icono} />
         <span>Tranferencia</span>
@@ -116,10 +124,26 @@ const Home = () => {
       </div>
 
       <div className={style.evento}>
-      <h1 className={style.titulo} id="galeria">
+        <h1 className={style.titulo} id="galeria">
           Galeria
         </h1>
-      <Galeria/>
+        <Galeria />
+        <div className={style.horizontal}>
+          <h3 className={style.separador}></h3>
+          <img src={flores} alt="flores" className={style.flores} />
+          <h3 className={style.separador}></h3>
+        </div>
+      </div>
+      <div className={style.vestimenta}>
+        <span className={style.span}>Virtual</span>
+        <p className={style.parrafo}>
+          ¡Sabemos que por diferentes motivos no podrás estar físicamente, pero
+          como deseamos que estés presente de alguna manera, queremos que
+          asistas virtualmente!
+        </p>
+        <a href="https://meet.google.com/odz-ysxo-foj" target="_blank">
+          <button className={style.boton}>Asistir</button>
+        </a>
         <div className={style.horizontal}>
           <h3 className={style.separador}></h3>
           <img src={flores} alt="flores" className={style.flores} />
